@@ -1,0 +1,82 @@
+:root {
+    --laranja: rgb(231, 170, 56);
+    --amarelo: yellow;
+    --cinza: rgb(196, 190, 190);
+    --roxinho: rgb(167, 92, 167);
+    --roxo: purple;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--laranja);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .container a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover {
+    color: var(--laranja);
+}
+
+.logo {
+    border: 3px double var(--roxo);
+    border-radius: 20%;
+}
+
+.principal {
+    background: linear-gradient(rgba(243, 194, 88, 0.5), rgba(0, 0, 0, .50)100%), url('/img/mm.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.principal .container {
+    width: 70%;
+}
+
+.botoes {
+    margin-top: 40px;
+    margin-left: 50%;
+}
+
+.botao {
+    background-color: rgba(74, 11, 99, 0.5);
+    padding: 15px 20px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.box-game {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-top: 6%;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
